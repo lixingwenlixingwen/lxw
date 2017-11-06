@@ -83,23 +83,20 @@ button{
 	height: 60%;
 }
 .pop_window span{
-	font-size: 1em;
+	font-size: .2rem;
 }
 .pop_price{
 	position: absolute;
 	left: 5%;
-	top: 70%;
+	top: 70%;	
 }
 .pop_history{
 	position: absolute;
 	right: 5%;
-	top: 70%;
+	top: 70%;	
 }
 .pop_price:before{
-	content: "价格：￥"
-}
-.pop_history:before{
-	content: "浏览次数："
+	content: "￥";
 }
 .pop_close{
 	position: absolute;

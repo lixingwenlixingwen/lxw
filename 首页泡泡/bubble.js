@@ -53,7 +53,7 @@ $(function(){
   		PopData=NewData[DataIndex];
   		$(".pop_price").text(PopData.price);
   		$(".pop_history").text(PopData.history);
-  		$(".pop_img").src(PopData.headimgurl);
+  		/*$(".pop_img").attr("src",PopData.headimgurl);*/
   	});
    $(".pop_close").click(function(){
   		$(".shade").hide(1);
