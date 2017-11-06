@@ -57,3 +57,65 @@ button{
 	width: 46%;
 	border-radius: 24%;
 }
+.shade{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background:gray;
+	opacity: 0.5;
+	display: none;
+}
+.pop_window{
+	width: 60%;
+	height: 45%;
+	position: absolute;
+	left: 20%;
+	top: 15%;
+	background: #fff;
+	z-index: 120;
+	display: none;
+}
+.pop_window img{
+	width: 100%;
+	height: 60%;
+}
+.pop_window span{
+	font-size: 1em;
+}
+.pop_price{
+	position: absolute;
+	left: 5%;
+	top: 70%;
+}
+.pop_history{
+	position: absolute;
+	right: 5%;
+	top: 70%;
+}
+.pop_price:before{
+	content: "价格：￥"
+}
+.pop_history:before{
+	content: "浏览次数："
+}
+.pop_close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 10%;
+	height: 8%;
+	background: gray;
+	display: block;
+}
+.pop_skipTo{
+	width: 50%;
+	height: 10%;
+	border-radius: 40%;
+	background: gray;
+	position: absolute;
+	left: 25%;
+	bottom: 5%;
+}

@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>首页</title>
 	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
-	<script type="text/javascript" src=".js"></script>
+	<script type="text/javascript" src="bubble.js"></script>
 	<link rel="stylesheet" type="text/css" href="bubble.css">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 </head>
 <body>
-	<button class="bt_bubble1" data-id="1"></button>
-	<button class="bt_bubble2" data-id="2"></button>
-	<button class="bt_bubble3" data-id="3"></button>
-	<button class="bt_bubble4" data-id="4"></button>
-	<button class="bt_bubble5" data-id="5"></button>
+	<div class="shade"></div>
+	<button class="bt_bubble1 bubble"></button>
+	<button class="bt_bubble2 bubble"></button>
+	<button class="bt_bubble3 bubble"></button>
+	<button class="bt_bubble4 bubble"></button>
+	<button class="bt_bubble5 bubble"></button>
 	<button class="bt_customize" id="bt_customize"></button>
+	<div class="pop_window">
+		<img class="pop_img" src="http://img1.gtimg.com/comic/pics/hv1/120/25/2194/142671345.jpg">
+		<span class="pop_price">10</span>
+		<span class="pop_history">10</span>
+		<button class="pop_skipTo">查看详情</button>
+		<button class="pop_close">X</button>
+	</div>
 </body>
 </html>
