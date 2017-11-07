@@ -5,7 +5,7 @@
         recalc = function () {
             var clientWidth = docEl.clientWidth;
             if (!clientWidth) return;
-            docEl.style.fontSize = 100 * (clientWidth / 375/*改成背景图片宽度*/) + 'px';
+            docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';/*改成背景图片宽度*/
         };
 
     if (!doc.addEventListener) return;

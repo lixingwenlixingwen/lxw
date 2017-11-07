@@ -8,7 +8,7 @@ button{
 	outline: none;
 	cursor:pointer;
 }
-.bt_bubble1{
+.btn_bubble1{
 	position: absolute;
 	left: 28.6%;
 	top: 10%;
@@ -16,7 +16,7 @@ button{
 	height: 10%;
 	border-radius: 60%;
 }
-.bt_bubble2{
+.btn_bubble2{
 	position: absolute;
 	left: 70%;
 	top: 8.2%;
@@ -24,7 +24,7 @@ button{
 	height: 13.6%;
 	border-radius: 50%;
 }
-.bt_bubble3{
+.btn_bubble3{
 	position: absolute;
 	top: 21%;
 	left: 1%;
@@ -32,7 +32,7 @@ button{
 	height: 13.6%;
 	border-radius: 50%;
 }
-.bt_bubble4{
+.btn_bubble4{
 	position: absolute;
 	left: 39%;
 	top: 25%;
@@ -40,7 +40,7 @@ button{
 	height: 17%;
 	border-radius: 50%;
 }
-.bt_bubble5{
+.btn_bubble5{
 	position: absolute;
 	left: 73%;
 	top: 39.5%;
@@ -49,7 +49,7 @@ button{
 	border-radius: 50%;
 }
 
-.bt_customize{
+.btn_customize{
 	position: absolute;
 	left: 27%;
 	top: 64.9%;
