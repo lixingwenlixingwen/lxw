@@ -144,7 +144,7 @@ img{
 }
 .Im_shade{
 	width: 100%;
-	height: 6.27rem;
+	height: 100%;
 	background: gray;
 	opacity: 0.3;
 	z-index: 60;
