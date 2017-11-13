@@ -1,0 +1,111 @@
+.ensureOrder_head{
+	width: 100%;
+	height: .4rem;
+	position: relative;
+	border-bottom: 1px solid gray;
+}
+.btn_headBack{
+	width: .6rem;
+	height: .4rem;
+	position: absolute;
+	z-index: 2;
+}
+.text_head{
+	font-size: .16rem;
+	color: #696969;
+	text-align: center;
+	width: 100%;
+	height: .23rem;
+	line-height: .23rem;
+	position: absolute;
+	top: .1rem;
+}
+button{
+	border:0;
+	outline: none;
+	cursor: pointer;
+	background: none;
+	font-size: 0;
+}
+/*标题栏下的图*/
+.img_ensure{
+	width: 100%;
+	height: 2.65rem;
+}
+/*图下面的文字数据*/
+.text_price:before{
+	content: "价格：￥"
+}
+.text_style:before{
+	content: "样式："
+}
+.text_num:before{
+	content: "数量："
+}
+.text_userName:before{
+	content: "收果人："
+}
+.text_userPhone:before{
+	content: "电话："
+}
+.text_userAddress:before{
+	content: "地址："
+}
+.ensure_data{
+	width: 100%;
+	height: 3.55rem;
+	position: relative;
+}
+.data_title{
+	width: 3.6rem;
+	height: .22rem;
+	position: absolute;
+	left: .15rem;
+	font-size: .18rem;
+	color: #696969;
+	font-weight: bold;
+}
+.data{
+	 width: 3.2rem;
+	height: .2rem;
+	position: absolute;
+	left: .15rem;
+	font-size: .17rem;
+	color: #696969;
+}
+.text_price{
+	top: .34rem;
+}
+.text_style{
+	top: .68rem;
+}
+.text_num{
+	top: 1.02rem;
+}
+.text_userName{
+	top: 1.36rem;
+}
+.text_userPhone{
+	top: 1.7rem;
+}
+.text_userAddress{
+	top: 2.04rem;
+}
+/*修改和支付按钮*/
+.btn_change,.btn_pay{
+	width: .8rem;
+	height: .4rem;
+	font-size: .2rem;
+	color: #696969;
+	border: 1px solid #696969;
+	border-radius: .08rem;
+	border-color: #696969; 
+	position: absolute;
+	bottom: .4rem;
+}
+.btn_change{
+	left: .6rem;
+}
+.btn_pay{
+	left: 2.2rem;
+}

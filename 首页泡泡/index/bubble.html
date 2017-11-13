@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>首页</title>
-	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+	<script src="../jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="bubble.js"></script>
-	<script type="text/javascript" src="rem.js"></script>
+	<script type="text/javascript" src="../rem.js"></script>
 	<link rel="stylesheet" type="text/css" href="bubble.css">
-	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="../reset.css">
 </head>
 <body>
 	<div class="shade"></div>
@@ -20,11 +20,17 @@
 	<button class="btn_bubble5 bubble"></button>
 	<button class="btn_customize" id="btn_customize"></button>
 	<div class="pop_window">
-		<img class="pop_img" src="http://img1.gtimg.com/comic/pics/hv1/120/25/2194/142671345.jpg">
+		<img class="pop_img" src="pop-bg.gif">
+		<span class="pop_title">
+		回忆那年冬天的雪花——双层果（商品标题）
+		</span>
 		<span class="pop_price">10</span>
+		<img class="popimg_history" src="history.png">
 		<span class="pop_history">10</span>
-		<button class="pop_skipTo">查看详情</button>
-		<button class="pop_close">X</button>
+		<a href="../detail/Details.html">
+			<button class="pop_skipTo">查看详情</button>
+		</a>
+		<button class="pop_close"><img src="close.png"></button>
 	</div>
 </body>
 </html>
