@@ -40,6 +40,8 @@ $(function(){
   		$(this).attr("data-id",NewData[index].appleid);
   	});
   $(document).on("click",".bubble",function(){
+    $(".pop_window").toggle(1000)
+    /*popwindow呈现效果*/
     	var DataIndex=-1;
     	var ThisId=-1;
     	var PopData={};
@@ -57,6 +59,6 @@ $(function(){
   	});
    $(".pop_close").click(function(){
   		$(".shade").hide(1);
-  		$(".pop_window").hide(1);
+  		$(".pop_window").toggle(1000)
   })
 })
