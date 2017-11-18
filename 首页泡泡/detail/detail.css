@@ -1,0 +1,311 @@
+.details_head{
+	width: 100%;
+	height: .4rem;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: #fff;
+}
+.btn_headBack{
+	width: .6rem;
+	height: .4rem;
+	position: absolute;
+	z-index: 2;
+}
+.btn_headBack img{
+	width: 60%;
+	height: 50%;
+}
+.text_head{
+	font-size: .16rem;
+	color: #696969;
+	text-align: center;
+	width: .81rem;
+	height: .23rem;
+	line-height: .23rem;
+	position: absolute;
+	top: .1rem;
+	left: 1.46rem;
+}
+button{
+	border:0;
+	outline: none;
+	cursor: pointer;
+	background: none;
+	font-size: 0;
+}
+.carousel_container{
+	width: 100%;
+	height: 1.82rem;
+	position: relative;
+	overflow: hidden;
+	margin-top: .4rem;
+}
+.img_list{
+	width: 100%;
+	height: 100%;
+}
+.img_list li{
+	display: none;
+	width: 3.75rem;
+	height: 100%;
+}
+.img_list img {
+	height: 100%;
+	width: 100%;
+}
+.ul_showOrderStatus {
+	position: absolute;
+	bottom: .22rem;
+	z-index: 2;
+	height: .1rem;
+	font-size: 0;
+}
+.ul_showOrderStatus .li_showOrderStatus {
+	display: inline-block;
+	width: .12rem;
+	height: .12rem;
+	margin-left: .12rem;
+	font-size: 0;
+}
+.li_showOrderStatus .img_showOrderStatus {
+	width: 100%;
+	height: 100%;
+}
+.btn_prev,.btn_next{
+	width: .32rem;
+	height: .32rem;
+	z-index: 2;
+	position: absolute;
+}
+.btn_prev{
+	left: .1rem;
+	top: .75rem;
+}
+.btn_next{
+	right: .1rem;
+	top: .75rem;
+}
+.p_title{
+	font-size: .16rem;
+	color: #696969;
+	line-height: .16rem;
+	height: .16rem;
+	margin-top: .1rem;
+	margin-left: .1rem;
+}
+.p_price{
+	font-size: .15rem;
+	height: .23rem;
+	width: 1.6rem;
+	color: rgb(204,13,36);
+	font-weight: bold;
+	margin-left: .08rem;
+	margin-top: .1rem;
+}
+.p_price:before{
+	content: "￥"
+}
+.longimg_detail{
+	width: 100%;
+	height: 3.27rem;
+}
+.div_buy{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: .5rem;
+	font-size: 0;
+	background: #fff;
+	border-top: .01rem solid #ccc;
+}
+.div_buy .btn_buycar{
+	width: .24rem;
+	height: .24rem;
+	position: absolute;
+	left: 1.385rem;
+	top: .15rem;
+}
+.div_buy .btn_buy{
+	width: .54rem;
+	height: .24rem;
+	font-size: .18rem;
+	color: #696969;
+	line-height: .24rem;
+	text-align: center;
+	position: absolute;
+	top: .17rem;
+	left: 1.7rem;
+}
+.Im_shade{
+	width: 100%;
+	height: 100%;
+	background: gray;
+	opacity: 0.3;
+	z-index: 60;
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.btn_close{
+	width: .32rem;
+	height: .32rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.btn_close img{
+	width: 100%;
+	height: 100%;
+}
+/*点击买买买以后的模块*/
+.div_onshade{
+	width: 100%;
+	height: 2.6rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 61;
+	background: #fff;
+	display: none;
+}
+.div_onshade button{
+	line-height: .2rem;
+}
+.img_onshade{
+	width: .84rem;
+	height: .6rem;
+	position: absolute;
+	top: -.1rem;
+	left: .1rem;
+}
+.onshade_price{
+	height: .24rem;
+	color: red;
+	font-size: .18rem;
+	font-weight: bold;
+	line-height: .24rem;
+	position: absolute;
+	left: 1.12rem;
+	top: .1rem;
+}
+.onshade_price:before{
+	content: "￥";
+}
+.onshade_choose{
+	width: 1.3rem;
+	height: .24rem;
+	color: #696969;
+	font-size: .16rem;
+	line-height: .24rem;
+	position: absolute;
+	left: 1.05rem;
+	top: .28rem;
+}
+.div_onshade span,button{
+	font-size: .16rem;
+	color: #696969;
+}
+.choose_style{
+	width: .82rem;
+	height: .2rem;
+	line-height: .2rem;
+	position: absolute;
+	left: .18rem;
+	top: .7rem;
+}
+.hide_choose{
+	font-size: 0;
+	margin-top: .8rem;
+	width: 2.6rem;
+	height: .4rem;
+	overflow: hidden;
+	background: #fff;
+	z-index: 2;
+}
+.byClick{
+	background: #696969;
+	color: white;
+}
+.btn_style{
+	width: 1.1rem;
+	height: .2rem;
+	line-height: .2rem;
+	border: 1px solid #696969;
+	border-radius: .05rem;
+	margin-left: .2rem;
+	margin-top: .2rem;
+}
+.btn_more{
+	width: .5rem;
+	height: .2rem;
+	border: 1px solid #696969;
+	border-radius: .05rem;
+	position: absolute;
+	right: .3rem;
+	top: 1rem;
+}
+.btn_hidemore{
+	width: .5rem;
+	height: .2rem;
+	border: 1px solid #696969;
+	border-radius: .05rem;
+	position: absolute;
+	right: .3rem;
+	top: 1rem;
+	display: none;
+}
+.choose_num{
+	width: .82rem;
+	height: .2rem;
+	position: absolute;
+	left: .2rem;
+	top: 1.4rem;
+}
+.btn_numsub{
+	width: .2rem;
+	height: .2rem;
+	position: absolute;
+	left: .2rem;
+	top: 1.7rem;
+}
+.btn_numsub img {
+	width: 100%;
+	height: 100%;
+}
+.btn_numadd{
+	width: .2rem;
+	height: .2rem;
+	position: absolute;
+	left: .86rem;
+	top: 1.7rem;
+}
+.btn_numadd img {
+	height: 100%;
+	width: 100%;
+}
+.text_num{
+	width: .35rem;
+	height: .2rem;
+	position: absolute;
+	left: .45rem;
+	top: 1.7rem;
+	border: 1px solid #696969;
+	font-size: .16rem;
+}
+.btn_ensure{
+	width: 100%;
+	height: .37rem;
+	position: absolute;
+	bottom: 0;
+	background: #696969;
+	color: #fff;
+	font-size: .2rem;
+}
+.longimg_detail img {
+	width: 100%;
+}

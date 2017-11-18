@@ -1,7 +1,6 @@
 .ensureOrder_head{
 	width: 100%;
 	height: .4rem;
-	position: relative;
 	border-bottom: 1px solid gray;
 }
 .btn_headBack{
@@ -9,6 +8,10 @@
 	height: .4rem;
 	position: absolute;
 	z-index: 2;
+}
+.btn_headBack img{
+	width: 60%;
+	height: 50%;
 }
 .text_head{
 	font-size: .16rem;
@@ -53,59 +56,48 @@ button{
 }
 .ensure_data{
 	width: 100%;
-	height: 3.55rem;
 	position: relative;
 }
 .data_title{
 	width: 3.6rem;
 	height: .22rem;
-	position: absolute;
-	left: .15rem;
 	font-size: .18rem;
 	color: #696969;
 	font-weight: bold;
+	margin-left: .18rem;
 }
 .data{
 	 width: 3.2rem;
 	height: .2rem;
-	position: absolute;
-	left: .15rem;
 	font-size: .17rem;
 	color: #696969;
+	margin-left: .2rem;
+	margin-top: .1rem;
 }
-.text_price{
-	top: .34rem;
-}
-.text_style{
-	top: .68rem;
-}
-.text_num{
-	top: 1.02rem;
-}
-.text_userName{
-	top: 1.36rem;
-}
-.text_userPhone{
-	top: 1.7rem;
-}
-.text_userAddress{
-	top: 2.04rem;
+
+
+.footer_operateBtn {
+	position: absolute;
+	height: .5rem;
+	width: 100%;
+	bottom: .4rem;
+	left: 0;
+	font-size: 0;
 }
 /*修改和支付按钮*/
-.btn_change,.btn_pay{
+.footer_operateBtn .btn_change, .footer_operateBtn .btn_pay{
+	display: inline-block;
+	vertical-align: top;
 	width: .8rem;
 	height: .4rem;
 	font-size: .2rem;
 	color: #696969;
 	border: 1px solid #696969;
 	border-radius: .08rem;
-	border-color: #696969; 
-	position: absolute;
-	bottom: .4rem;
 }
 .btn_change{
-	left: .6rem;
+	margin-left: .6rem;
 }
 .btn_pay{
-	left: 2.2rem;
+	margin-left: .8rem;
 }
