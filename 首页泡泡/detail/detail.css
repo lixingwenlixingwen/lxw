@@ -1,4 +1,4 @@
-.details_head{
+﻿.details_head{
 	width: 100%;
 	height: .4rem;
 	border-bottom: 1px solid #ccc;
@@ -111,7 +111,6 @@ button{
 }
 .longimg_detail img{
 	width: 100%;
-	min-height: 15rem;
 }
 .div_buy{
 	position: fixed;
@@ -178,21 +177,20 @@ button{
 	line-height: .2rem;
 }
 .img_onshade{
-	width: .84rem;
-	height: .6rem;
-	position: absolute;
-	top: -.1rem;
-	left: .1rem;
+    width: .9rem;
+    height: .7rem;
+    position: absolute;
+    top: -.25rem;
+    left: .1rem;
 }
 .onshade_price{
 	height: .24rem;
 	color: red;
-	font-size: .18rem;
+	font-size: .16rem;
 	font-weight: bold;
 	line-height: .24rem;
-	position: absolute;
-	left: 1.12rem;
-	top: .1rem;
+	margin-left: 1.22rem;
+	margin-top: ;
 }
 .onshade_price:before{
 	content: "￥";
@@ -203,9 +201,8 @@ button{
 	color: #696969;
 	font-size: .16rem;
 	line-height: .24rem;
-	position: absolute;
-	left: 1.05rem;
-	top: .28rem;
+	margin-left: 1.15rem;
+	margin-top: ;
 }
 .div_onshade span,button{
 	font-size: .16rem;
@@ -215,24 +212,34 @@ button{
 	width: .82rem;
 	height: .2rem;
 	line-height: .2rem;
-	position: absolute;
-	left: .18rem;
-	top: .7rem;
+	font-size: .16rem;
+	color: #696969;
+	margin-left: .18rem;
+	margin-top: ;
+}
+/*data大模块*/
+.div_shadeData{
+	width: 100%;
+	height: 2.5rem;
+	overflow: scroll;
+	font-size: 0;
 }
 .hide_choose{
 	font-size: 0;
-	margin-top: 1rem;
-	height: .8rem;
-	overflow: scroll;
+	margin-top: ;
+	width: 3rem;
 	background: #fff;
 	z-index: 2;
+}
+.hide_choose li{
+	display: inline-block;
 }
 .byClick{
 	background: #696969;
 	color: white;
 }
 .btn_style{
-	width: 1rem;
+	width: 1.1rem;
 	height: .2rem;
 	line-height: .2rem;
 	border: 1px solid #696969;
@@ -241,42 +248,40 @@ button{
 	margin-top: .2rem;
 }
 .choose_num{
-	width: .82rem;
+	display: inline-block;
+	font-size: .16rem;
 	height: .2rem;
-	position: absolute;
-	left: .2rem;
-	top: 2.1rem;
+	margin-left: .2rem;
 }
 .btn_numsub{
+	display: inline-block;
+	vertical-align: top;
 	width: .2rem;
 	height: .2rem;
-	position: absolute;
-	left: .2rem;
-	top: 2.4rem;
 }
 .btn_numsub img {
 	width: 100%;
 	height: 100%;
 }
 .btn_numadd{
+	display: inline-block;
+	vertical-align: top;
 	width: .2rem;
 	height: .2rem;
-	position: absolute;
-	left: .86rem;
-	top: 2.4rem;
+	margin-left: .1rem;
 }
 .btn_numadd img {
 	height: 100%;
 	width: 100%;
 }
 .text_num{
+	display: inline-block;
+	vertical-align: top;
 	width: .35rem;
 	height: .2rem;
-	position: absolute;
-	left: .45rem;
-	top: 2.4rem;
 	border: 1px solid #696969;
 	font-size: .16rem;
+	margin-left: .1rem;
 }
 .btn_ensure{
 	width: 100%;
@@ -287,6 +292,8 @@ button{
 	color: #fff;
 	font-size: .2rem;
 }
-.longimg_detail img {
-	width: 100%;
+
+.module_wareNum {
+	margin-top: .2rem;
+	font-size: 0;
 }

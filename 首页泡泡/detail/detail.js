@@ -15,7 +15,7 @@ $(function(){
 	var index=0;
 	/*样式按钮自适应*/
 	$.each(DetailData.data.style,function(index){
-		var style = "<button class='btn_style'></button>";
+		var style = "<li><button class='btn_style'></button></li>";
 		$(".hide_choose").append(style);
 		index += 1;
 		$(".btn_style").each(function(index){
