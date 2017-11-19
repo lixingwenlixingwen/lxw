@@ -1,0 +1,33 @@
+$(function(){
+	var Data={
+	  "error":0,
+	  "data":{
+	    "img_url":"http://img1.gtimg.com/sports/pics/hv1/189/57/1707/111012399.jpg",
+	    "headers":"回忆那年冬天的雪花——双层果(商品标题)",
+	    "price":"15:00",
+	    "num":1,
+	    "style":'style1',
+	    "person":"张三",
+	    "tel":13333333333,
+	    "address":"xxxxxxxx",
+	    "comment":"xxxxxxxx",
+	    "payway":1
+	  }
+	}
+	/*图片路径*/
+	$(".img_ensure").attr("src",Data.data.img_url);
+	/*标题*/
+	$(".data_title").text(Data.data.headers);
+	/*价格*/
+	$(".text_price").text(Data.data.price);
+	/*样式*/
+	$(".text_style").text(Data.data.style);
+	/*数量*/
+	$(".text_num").text(Data.data.num);
+	/*收果人*/
+	$(".text_userName").text(Data.data.person);
+	/*电话*/
+	$(".text_userPhone").text(Data.data.tel);
+	/*地址*/
+	$(".text_userAddress").text(Data.data.address);
+})

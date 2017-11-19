@@ -7,7 +7,7 @@ $(function(){
 	    "headers":"回忆那年冬天的雪花——双层果(商品标题)",
 	    "price":15,
 	    "details":["http://i0.hdslb.com/bfs/archive/9f233f3f6bffa44a471a872df365692ebc8dc96e.png"],
-	    "style":['style1','style2','style3','style4','style5']
+	    "style":['1','style2','style3','style4','style5','style6','style7','style8']
 	  }
 	};
 	$(".p_price").text(DetailData.data.price);
@@ -68,17 +68,20 @@ $(function(){
 	var timer=null;
 	timer=setInterval(car,3000);
 	/*买买买按钮*/
-	$(document).on("click",".btn_buy",function(){
+	$(document).on("click",".div_buy",function(){
 		$(".Im_shade").show(1);
 		$(".div_onshade").toggle(400)
 	});
-	$(document).on("click",".btn_close",function(){
+	$(document).on("click",".btn_close,.btn_ensure",function(){
 		$(".Im_shade").hide(1);
 		$(".div_onshade").toggle(400)
 	});
 	/*样式选择背景变化*/
-	$(".btn_style").click(function(){
-		$(this).toggleClass("byClick");
+	var styleStatus = 0;
+	$(".btn_style").eq(styleStatus).addClass("byClick");
+	$(document).on("click",".btn_style",function(){
+		$(".btn_style").removeClass("byClick");
+		$(this).addClass("byClick");
 	});
 	/*更多样式按钮点击*/
 	$(".btn_more").click(function(){
@@ -104,5 +107,30 @@ $(function(){
 		if(num==0){
 			$(".text_num").val(num-0);
 		}
+	})
+	$(".text_num").blur(function(){
+		if($(this).val() == ""){
+			$(this).val("0");
+		}
+	});
+	/*顶部标题栏随滚动而变化*/
+	$(document).scroll(function() {
+		var scrollTop = $(this).scrollTop();
+		var line = 400;
+		var opacity = (line-scrollTop)/line;
+		if(opacity < 0.05) {
+			opacity = 0;
+			$("#details_head").css("display","none");
+		} else if(opacity>=1) {
+			opacity =1;
+		} else {
+			$("#details_head").css("display","block");
+		};
+		$("#details_head").css("opacity",opacity);
+		$(".text_head").css("font-size","0.16"*opacity+"rem");
+		$(".btn_headBack").css("transform","scale("+opacity+","+opacity+")");
+	})
+	$(".btn_headBack").click(function(){
+		window.location.href="../index/bubble.html";
 	})
 });

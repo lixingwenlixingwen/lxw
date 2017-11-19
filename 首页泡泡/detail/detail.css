@@ -5,8 +5,9 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 10;
 	background: #fff;
+	display: block;
 }
 .btn_headBack{
 	width: .6rem;
@@ -108,9 +109,9 @@ button{
 .p_price:before{
 	content: "￥"
 }
-.longimg_detail{
+.longimg_detail img{
 	width: 100%;
-	height: 3.27rem;
+	min-height: 15rem;
 }
 .div_buy{
 	position: fixed;
@@ -165,7 +166,7 @@ button{
 /*点击买买买以后的模块*/
 .div_onshade{
 	width: 100%;
-	height: 2.6rem;
+	height: 3.4rem;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -220,10 +221,9 @@ button{
 }
 .hide_choose{
 	font-size: 0;
-	margin-top: .8rem;
-	width: 2.6rem;
-	height: .4rem;
-	overflow: hidden;
+	margin-top: 1rem;
+	height: .8rem;
+	overflow: scroll;
 	background: #fff;
 	z-index: 2;
 }
@@ -232,7 +232,7 @@ button{
 	color: white;
 }
 .btn_style{
-	width: 1.1rem;
+	width: 1rem;
 	height: .2rem;
 	line-height: .2rem;
 	border: 1px solid #696969;
@@ -240,38 +240,19 @@ button{
 	margin-left: .2rem;
 	margin-top: .2rem;
 }
-.btn_more{
-	width: .5rem;
-	height: .2rem;
-	border: 1px solid #696969;
-	border-radius: .05rem;
-	position: absolute;
-	right: .3rem;
-	top: 1rem;
-}
-.btn_hidemore{
-	width: .5rem;
-	height: .2rem;
-	border: 1px solid #696969;
-	border-radius: .05rem;
-	position: absolute;
-	right: .3rem;
-	top: 1rem;
-	display: none;
-}
 .choose_num{
 	width: .82rem;
 	height: .2rem;
 	position: absolute;
 	left: .2rem;
-	top: 1.4rem;
+	top: 2.1rem;
 }
 .btn_numsub{
 	width: .2rem;
 	height: .2rem;
 	position: absolute;
 	left: .2rem;
-	top: 1.7rem;
+	top: 2.4rem;
 }
 .btn_numsub img {
 	width: 100%;
@@ -282,7 +263,7 @@ button{
 	height: .2rem;
 	position: absolute;
 	left: .86rem;
-	top: 1.7rem;
+	top: 2.4rem;
 }
 .btn_numadd img {
 	height: 100%;
@@ -293,7 +274,7 @@ button{
 	height: .2rem;
 	position: absolute;
 	left: .45rem;
-	top: 1.7rem;
+	top: 2.4rem;
 	border: 1px solid #696969;
 	font-size: .16rem;
 }
